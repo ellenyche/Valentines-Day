@@ -1,0 +1,60 @@
+body {
+  background-color: #fff;
+  background-image: url("images/spotted-background.png");
+  margin: 5rem 6.25rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  color: #800505;
+  font-weight: 800;
+  font-size: 4.7rem;
+}
+
+h2 {
+  color: #ff3d00;
+  font-weight: 700;
+  font-size: 2.6rem;
+}
+
+h3 {
+  color: #fd761d;
+  font-size: 2.1rem;
+  line-height: 1.25;
+}
+
+.sweet {
+  color: #800505;
+}
+
+.back {
+  position: absolute;
+  text-align: right;
+  bottom: 14.5rem;
+  right: 8.3rem;
+  color: #800505;
+
+}
+
+.letter-img {
+  position: absolute;
+  right: 6.25rem;
+  bottom: 6.25rem;
+  width: 15rem;
+
+}
+
+.letter-img:hover {
+
+  animation: shake 0.5s;
+
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(0px, 0px) rotate(0deg); }
+  25% { transform: translate(0px, -3px) rotate(-1deg); }
+  50% { transform: translate(-3px, 0px) rotate(1deg); }
+  75% { transform: translate(0px, -3px) rotate(-1deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+}

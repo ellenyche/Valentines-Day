@@ -1,0 +1,99 @@
+
+@font-face {
+font-family: 'Now Medium';
+font-style: normal;
+font-weight: normal;
+src: local('Now Medium'), url('fonts/Now-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Playlist Script';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Now Regular'), url('fonts/Playlist Script.otf') format('woff');
+}
+
+body {
+  background-color: #f6c9de;
+  background-image: url("images/spotted-background.png");
+  margin: 5rem 6.25rem;
+}
+
+h1 {
+  font-family: "Now Medium", sans-serif;
+  letter-spacing: 5px;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-family: "Playlist Script", cursive;
+  color: #dd2e44;
+  font-size: 59px;
+}
+
+.heart-img {
+  width:150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.container-fluid {
+margin: 3rem 0;
+}
+
+.letter-img {
+  position: relative;
+  width: 40rem;
+
+}
+
+.letter-img:hover {
+
+  animation: shake 0.5s;
+
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(0px, 0px) rotate(0deg); }
+  25% { transform: translate(0px, -3px) rotate(-1deg); }
+  50% { transform: translate(-3px, 0px) rotate(1deg); }
+  75% { transform: translate(0px, -3px) rotate(-1deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+.arrow {
+  width: 15rem;
+}
+
+
+.left-arrow {
+  position: relative;
+  left: 100px;
+  bottom: 40px;
+  transform:rotateY(180deg) rotate(20deg);
+
+}
+
+
+.right-arrow {
+  position: relative;
+  float: right;
+  right: 80px;
+  top: 40px;
+  transform: rotate(50deg);
+  }
+
+.left-click {
+  text-align: left;
+  transform: rotate(-17deg);
+}
+.right-click {
+  position: relative;
+  text-align: right;
+  transform: rotate(17deg);
+  top: 7rem;
+}
